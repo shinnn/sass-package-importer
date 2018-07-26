@@ -1,0 +1,39 @@
+{
+	"name": "sass-package-importer",
+	"version": "0.0.0",
+	"description": "A node-sass importer to resolve files from either npm packages or relative paths",
+	"repository": "shinnn/sass-package-importer",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc --reporter=html --reporter=text node test/test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"sass",
+		"node-sass",
+		"package",
+		"import",
+		"importer",
+		"plugin",
+		"css",
+		"resolve",
+		"path",
+		"resolution",
+		"require"
+	],
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"eslint": "^5.2.0",
+		"node-sass": "^4.9.2",
+		"normalize.css": "^8.0.0",
+		"nyc": "^12.0.2",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
+}
