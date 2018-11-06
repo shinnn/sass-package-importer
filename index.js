@@ -8,7 +8,7 @@ module.exports = function sassPackageImporter(path, prev, done) {
 
 	try {
 		resolvedPath = require.resolve(path);
-	} catch {
+	} catch(err) {
 		done({file: path});
 		return;
 	}
